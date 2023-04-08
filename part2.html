@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Assignment 2 - Part 2</title>
+</head>
+<body>
+    <h3>Country:</h3>
+    <p>CANADA</p>
+    <h3>Capital: </h3>
+    <p id="capital">OTTAWA</p>
+
+    <button id="hide" onclick="hide()">Hide capital name</button>
+    <button id="show" onclick="show()">Show capital name</button>
+    <button id="toggle" onclick="toggle()">Toggle</button>
+
+    <p onmouseover="this.style.backgroundColor='yellow'">Hover on this paragraph for Yellow</p>
+    <p onclick="this.style.backgroundColor='green'">Click on this paragraph for Green example</p>
+
+    <script>
+        function hide() {
+            document.getElementById("capital").style.display = "none";
+        }
+
+        function show() {
+            document.getElementById("capital").style.display = "block";
+        }
+
+        function toggle() {
+            if (document.getElementById("capital").style.display == "none") {
+                document.getElementById("capital").style.display = "block";
+            } else {
+                document.getElementById("capital").style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
